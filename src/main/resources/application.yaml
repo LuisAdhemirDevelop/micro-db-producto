@@ -1,3 +1,10 @@
+server:
+  port: 9011
 spring:
   application:
     name: micro-db-producto
+
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.r2dbc.R2dbcAutoConfiguration
+      - org.springframework.boot.autoconfigure.r2dbc.R2dbcRepositoriesAutoConfiguration
